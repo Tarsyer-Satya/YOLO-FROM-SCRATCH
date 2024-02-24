@@ -5,6 +5,5 @@ VOCtest_06-Nov-2007.tar
 voc_label.py
 train.csv
 test.csv
-generate_csv.py
 /old_txt_files
 
