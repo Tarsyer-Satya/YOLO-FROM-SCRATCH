@@ -30,8 +30,8 @@ NUM_WORKERS = 2
 PIN_MEMORY = True
 LOAD_MODEL = False
 LOAD_MODEL_FILE = "overfit.pth.tar"
-IMG_DIR = "/home/satya/Desktop/Research papers/yolo/data/data/images"
-LABEL_DIR = '/home/satya/Desktop/Research papers/yolo/data/data/labels'
+IMG_DIR = "data/images"
+LABEL_DIR = 'data/labels'
 
 
 class Compose():
@@ -74,14 +74,14 @@ def main():
     loss_fn = YoloLoss()
 
     train_dataset = VOCDataset(
-        "data/sample_train.csv",
+        "sample_train.csv",
         transform=transform,
         img_dir = IMG_DIR,
         label_dir = LABEL_DIR
     )
 
     test_dataset = VOCDataset(
-        "data/sample_test.csv",
+        "sample_test.csv",
         transform=transform,
         img_dir=IMG_DIR,
         label_dir=LABEL_DIR

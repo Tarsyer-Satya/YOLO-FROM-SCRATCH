@@ -4,8 +4,8 @@ import os
 import pandas as pd
 
 # /home/satya/Desktop/Research papers/yolo/data/test.csv
-train_path = os.path.join('data','train.csv')
-test_path = os.path.join('data','test.csv')
+train_path = os.path.join('train.csv')
+test_path = os.path.join('test.csv')
 train_data = pd.read_csv(train_path)
 test_data = pd.read_csv(test_path)
 
